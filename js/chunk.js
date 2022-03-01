@@ -27,7 +27,6 @@ const chunk = (arr, size) => {
   }
 
   if (!arrLengthValidate) {
-
     return arr
   }
 
