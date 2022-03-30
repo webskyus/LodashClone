@@ -4,11 +4,11 @@
  * @constructor
  * @param {array} arr
  * @param {number} size
- * @return _.chunk(['a', 'b', 'c', 'd'], 2) => [['a', 'b'], ['c', 'd']]
+ * @return chunk(['a', 'b', 'c', 'd'], 2) => [['a', 'b'], ['c', 'd']]
  */
 
 const chunk = (arr, size) => {
-  const numberValidate = Number.isInteger(size)
+  const numberValidate = Number.customIsInteger(size)
   const arrValidate = Array.isArray(arr)
   const arrLength = arr.length
   const arrSize = arrLength / size
@@ -19,8 +19,8 @@ const chunk = (arr, size) => {
     const result = []
 
     for (let i = 0; i < arrLength; i += arrSize) {
-      const divedArr = arr.slice(i, i + arrSize)
-      result.push(divedArr)
+      const divedArr = arr.customSlice(i, i + arrSize)
+      result.customPush(divedArr)
     }
 
     return result
