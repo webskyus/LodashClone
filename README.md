@@ -28,6 +28,8 @@ __________________________________
 #### ✅ Array / ._differenceBy
 <code>
 differenceBy([2.1, 1.2], [2.3, 3.4], Math.floor)
+</code>
+<code>
 differenceBy([{ 'x': 2 }, { 'x': 1 }], [{ 'x': 1 }], 'x')
 </code>
 
