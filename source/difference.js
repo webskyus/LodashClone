@@ -13,7 +13,7 @@ const difference = (originArr, comparedArr) => {
   const validation = firstElement && comparedElement
 
   if (validation) {
-    [1,3,5,6,6].customFilter(item => console.log('customFilter', item))
+    return originArr.customFilter(item => !comparedArr.includes(item))
   }
 
 }
