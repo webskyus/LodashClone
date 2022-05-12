@@ -1,6 +1,5 @@
 import './polyfill/index.js'
-import differenceBy from './source/differenceBy.js'
+import fill from "./source/fill.js";
 
+console.log('fill', fill([4, 6, 8, 10], '*', 2))
 
-// console.log(differenceBy([2.1, 1.2], [2.3, 2], Math.floor))
-// console.log(differenceBy([{ 'x': 2 }, { 'x': 1 }, ], [{ 'x': 1 }], 'x'))
