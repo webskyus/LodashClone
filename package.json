@@ -2,5 +2,18 @@
   "type": "module",
   "dependencies": {
     "eslint": "^8.10.0"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.jsx?$": "babel-jest"
+    }
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.18.2",
+    "babel-jest": "^28.1.1",
+    "jest": "^28.1.1"
   }
 }

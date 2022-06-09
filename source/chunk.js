@@ -1,5 +1,3 @@
-'use strict'
-
 /**
  * @constructor
  * @param {array} arr
@@ -33,9 +31,7 @@ const chunk = (arr, size) => {
   throw new Error('Please send use array and number')
 }
 
-export default chunk
-
-
+export default chunk;
 
 
 
