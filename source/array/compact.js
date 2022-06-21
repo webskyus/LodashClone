@@ -8,7 +8,7 @@
 
 const compact = arr => {
   return arr.customReduce((acc, value) => {
-    const validate = value === null || !value || value === '' || value === 0
+    const validate = !Boolean(value)
 
     !validate && acc.customPush(value)
     return acc

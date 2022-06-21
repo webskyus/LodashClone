@@ -13,7 +13,7 @@ const fill = (arr, ...args) => {
   const argsArrLength = argsArrLengthValidate && args.length
 
   if (arrValidate && argsArrLengthValidate) {
-    if (argsArrLength === 1 && Number.isInteger(args[0])) {
+    if (argsArrLength === 1) {
       return arr.customMap(() => args[0])
     } else if (argsArrLength === 2 && Number.isInteger(args[1]) && !args[2]) {
       return arr.customMap((item, index) => {
