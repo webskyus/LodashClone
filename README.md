@@ -102,3 +102,26 @@ findIndex(users, { 'user': 'fred',  'active': false }) => 1
 <code>
 findIndex(users, 'active') => 2
 </code>
+
+__________________________________
+#### ✅ Array / .findIndex
+
+<code>
+  const users = [
+    <p style="margin-left: 40px; line-height: 0">{ 'user': 'barney',  'active': true },</p>
+    <p style="margin-left: 40px; line-height: 0; margin-bottom: 0">{ 'user': 'fred',    'active': false },</p>
+    <p style="margin-left: 40px; line-height: 0">{ 'user': 'pebbles', 'active': false },</p>
+  ];
+</code>
+<br>
+<code>
+findLastIndex(users, function(o) { return o.user == 'pebbles'; }) => 2
+</code>
+<br/>
+<code>
+findLastIndex(users, { 'user': 'fred',  'active': false }) => 2
+</code>
+<br/>
+<code>
+findLastIndex(users, 'active') => 0
+</code>

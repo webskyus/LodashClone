@@ -8,6 +8,8 @@ test(`Example findIndex(users, ['active', false]) => 0`, () => {
     { 'user': 'pebbles', 'active': true }
   ];
 
+  expect(findIndex(users, function(o) { return o.user === 'pebbles'; }))
+    .toBe(2)
   expect(findIndex(users, ['active', false]))
     .toBe(0)
   expect(findIndex(users, { 'user': 'fred',  'active': false }))
