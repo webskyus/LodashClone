@@ -125,3 +125,27 @@ findLastIndex(users, { 'user': 'fred',  'active': false }) => 2
 <code>
 findLastIndex(users, 'active') => 0
 </code>
+
+__________________________________
+#### ✅ Array / .head
+<code>
+_.head([1, 2, 3]);
+// => 1
+
+_.head([]);
+// => undefined
+</code>
+
+__________________________________
+#### ✅ Array / .flatten
+<code>
+_.flatten([1, [2, [3, [4]], 5]]);
+// => [1, 2, [3, [4]], 5]
+</code>
+
+__________________________________
+#### ✅ Array / .flattenDeep
+<code>
+_.flatten([1, [2, [3, [4]], 5]]);
+// => [1, 2, 3, 4, 5]
+</code>

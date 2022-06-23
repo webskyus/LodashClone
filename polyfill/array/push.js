@@ -1,4 +1,9 @@
 export default Array.prototype.customPush = function () {
   const currentArray = this
-  currentArray[currentArray.length] = arguments[0]
+
+  for (let i = 0; i < arguments.length; i++) {
+    currentArray[currentArray.length] = arguments[i]
+  }
+
+  return currentArray.length
 }
