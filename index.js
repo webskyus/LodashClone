@@ -1,5 +1,6 @@
 import './polyfill/index.js'
-import flattenDeep from "./source/array/flattenDeep.js";
+import indexOf from "./source/array/indexOf.js";
 
-console.log('flattenDeep', flattenDeep([1, [2, [3, [4]], 5]]))
-console.log('flattenDeep', flattenDeep([]))
+
+
+console.log('1', indexOf([1, 2, 1, 2], 2))
