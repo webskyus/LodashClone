@@ -7,12 +7,18 @@
  */
 
 const compact = arr => {
-  return arr.customReduce((acc, value) => {
-    const validate = !Boolean(value)
+  const arrValidate = Array.isArray(arr)
 
-    !validate && acc.customPush(value)
-    return acc
-  }, [])
+  if (arrValidate) {
+    return arr.customReduce((acc, value) => {
+      const validate = !Boolean(value)
+
+      !validate && acc.customPush(value)
+      return acc
+    }, [])
+  }
+
+  return []
 }
 
 export default compact

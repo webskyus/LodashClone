@@ -14,4 +14,6 @@ test('Returns the index of the matched value, else -1', () => {
     .toBe(2)
   expect(indexOf([1, 2, 1, 2], 2, 2))
     .toBe(3)
+  expect(indexOf([1, 2, 1, 2], 2, 20))
+    .toBe(-1)
 })
